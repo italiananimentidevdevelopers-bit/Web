@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Vollkorn, Source_Sans_3 } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -35,7 +36,10 @@ export default function RootLayout({
       lang="it"
       className={`${inter.variable} ${vollkorn.variable} ${sourceSans.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col font-inter bg-secondary-100 text-neutral-1000">{children}</body>
+      <body className="min-h-full flex flex-col font-inter bg-secondary-100 text-neutral-1000">
+        {children}
+        <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" strategy="beforeInteractive" />
+      </body>
     </html>
   );
 }
