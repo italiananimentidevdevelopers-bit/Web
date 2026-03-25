@@ -4,12 +4,12 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
-const imgFrame68 = "http://localhost:3845/assets/30b706c6f89433e8d7cf6bfe5355df2f18790934.png";
-const imgGroup = "http://localhost:3845/assets/ec5b75ecd53c1ac02e877dee977a42e9ed8a10eb.svg";
+const imgFrame68 = "/assets/30b706c6f89433e8d7cf6bfe5355df2f18790934.png";
+const imgGroup = "/assets/af9a1eb55b3b43dcf0d08101e38346021139cf23.svg";
 
 export default function Login() {
   const router = useRouter();
-  
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -33,15 +33,15 @@ export default function Login() {
 
     const netlifyIdentity = (window as any).netlifyIdentity;
     if (!netlifyIdentity) {
-       setError("Sistema de autenticación todavía no cargado. Intenta de nuevo.");
-       setLoading(false);
-       return;
+      setError("Sistema de autenticación todavía no cargado. Intenta de nuevo.");
+      setLoading(false);
+      return;
     }
 
     try {
       // Netlify Identity provee la librería GoTrue nativamente bajo 'gotrue'
       await netlifyIdentity.gotrue.login(email, password, true);
-      
+
       // Lanzar el evento global por si el widget necesita saberlo y navegar
       window.dispatchEvent(new Event('netlifyIdentityLogin'));
       router.push("/estudiante_test");
@@ -71,7 +71,7 @@ export default function Login() {
           </div>
         </div>
       </div>
-      
+
       {/* Right Panel */}
       <div className="flex-1 flex flex-col items-center justify-center p-8 md:p-[10px] relative w-full">
         <form onSubmit={handleLogin} className="flex flex-col gap-6 items-start relative w-full max-w-[539px]">
@@ -91,37 +91,37 @@ export default function Login() {
               <span className="block sm:inline">{error}</span>
             </div>
           )}
-          
+
           <div className="flex flex-col gap-2 items-start relative w-full">
             <label className="font-inter font-normal text-[16px] text-secondary-400">
               Email
             </label>
-            <input 
-              type="email" 
+            <input
+              type="email"
               placeholder="Email"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="border border-secondary-300 rounded-6 p-4 w-full font-inter font-medium text-[18px] text-secondary-full outline-none focus:border-secondary-full transition" 
+              className="border border-secondary-300 rounded-6 p-4 w-full font-inter font-medium text-[18px] text-secondary-full outline-none focus:border-secondary-full transition"
             />
           </div>
-          
+
           <div className="flex flex-col gap-2 items-start relative w-full">
             <label className="font-inter font-normal text-[16px] text-secondary-400">
               Contraseña
             </label>
-            <input 
-              type="password" 
-              placeholder="*****" 
+            <input
+              type="password"
+              placeholder="*****"
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="border border-secondary-300 rounded-6 p-4 w-full font-inter font-medium text-[18px] text-secondary-full outline-none focus:border-secondary-full transition" 
+              className="border border-secondary-300 rounded-6 p-4 w-full font-inter font-medium text-[18px] text-secondary-full outline-none focus:border-secondary-full transition"
             />
           </div>
-          
-          <button 
-            type="button" 
+
+          <button
+            type="button"
             onClick={() => {
               // Si el usuario quiere restaurar contraseña, abrimos el widget oficial sólo para el módulo de recuperación
               const netlifyIdentity = (window as any).netlifyIdentity;
@@ -133,15 +133,15 @@ export default function Login() {
           >
             Olvidaste tu contraseña
           </button>
-          
-          <button 
+
+          <button
             type="submit"
             disabled={loading}
             className="bg-primary-full border border-primary-full text-inverse font-inter font-normal text-[16px] leading-[24px] p-m rounded-m w-full mt-4 hover:opacity-90 transition cursor-pointer flex justify-center items-center disabled:opacity-50"
           >
             {loading ? "Cargando..." : "Login"}
           </button>
-          
+
           {/* Ocultamos el div de crear cuenta porque los administradores controlan los accesos */}
           {/*
           <div className="flex font-inter font-medium gap-2 items-center justify-center text-[16px] w-full mt-6">
