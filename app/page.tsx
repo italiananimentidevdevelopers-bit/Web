@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/Button';
 import { TestimonialCard } from '@/components/cards/TestimonialCard';
 import { CourseCard } from '@/components/cards/CourseCard';
 import Footer from '@/components/footer'
+import Navbar from '@/components/navbar'
 
 const imgFrame5 = "/assets/897757f44d219e8bfba914e95fbdd08aa2ea2d1f.png";
 const imgFrame10 = "/assets/30b706c6f89433e8d7cf6bfe5355df2f18790934.png";
@@ -16,34 +17,14 @@ const imgFrame13 = "/assets/0842adaba6003557b1795d415fd38b2bdfd779ab.png";
 const imgImage6 = "/assets/25bfc8108eb6715a6781b4eb3f25f9480345e0f1.png";
 const imgImage7 = "/assets/6d4c41671660810e6232ccb7db35da0c6190dade.png";
 const imgFrame15 = "/assets/e8fc5ab2d5b1c2d330ad2c47942a814653c9bcd7.png";
-const imgVector = "/assets/fafcd55cceac02a2fdc8a1161b612363df033e03.svg";
-const imgVector1 = "/assets/9f4b8341df2e676e83f5b1aad395216a53fcd624.svg";
 
 export default function Home() {
   return (
     <div className=" content-stretch flex flex-col items-center pt-[10px] relative size-full">
-      <div className="content-stretch flex items-center justify-between container mx-auto overflow-clip relative shrink-0 w-full px-[10px]">
-        <div className="overflow-clip relative shrink-0 size-[85px]">
-          <div className="absolute inset-[51.7%_15.8%_24.31%_76.76%]">
-            <img alt="" className="absolute block max-w-none size-full" src={imgVector} />
-          </div>
-          <div className="absolute inset-[16.06%_15.79%_15.85%_16.09%]">
-            <img alt="" className="absolute block max-w-none size-full" src={imgVector1} />
-          </div>
-        </div>
-        <div className="content-stretch flex gap-[10px] items-center relative shrink-0">
-          <Button variant="ghost" size="sm">Corsi Di lingua</Button>
-          <Button variant="ghost" size="sm">Lavoratori</Button>
-          <Button variant="ghost" size="sm">Cafe Italiano</Button>
-          <Button variant="ghost" size="sm">Nosotros</Button>
-        </div>
-        <div className="content-stretch flex gap-[10px] items-start relative shrink-0">
-          <Button variant="outline" size="sm">Registro</Button>
-          <Link href="/login" tabIndex={-1}>
-            <Button variant="solid" size="sm" className="w-full">Login</Button>
-          </Link>
-        </div>
-      </div>
+
+
+      <Navbar />
+
       <div className="content-stretch flex gap-[10px] items-start container mx-auto overflow-clip py-5 relative shrink-0 w-full px-[10px]">
         <div className="bg-green-400 flex-[1_0_0] h-[4px] min-h-px min-w-px" />
         <div className="bg-neutral-100 flex-[1_0_0] h-[4px] min-h-px min-w-px" />
