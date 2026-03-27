@@ -7,7 +7,7 @@ import { CourseCard } from '@/components/cards/CourseCard';
 import Footer from '@/components/footer'
 import Navbar from '@/components/navbar'
 
-const imgFrame5 = "/assets/897757f44d219e8bfba914e95fbdd08aa2ea2d1f.png";
+const imgFrame5 = "/assets/897757f44d219e8bfba914e95fbdd08aa2ea2d1f.jpg";
 const imgFrame10 = "/assets/30b706c6f89433e8d7cf6bfe5355df2f18790934.png";
 const imgBelkacemyabadeneManipulation44990101 = "/assets/00d843f980b687404aa864018af8dc24bc26db1f.png";
 const imgImage2 = "/assets/a81dbac8eccd3a1f8aa91ebdd2021b0d5e7ea57c.png";
@@ -35,31 +35,27 @@ export default function Home() {
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-7">
           <img alt="" className="absolute h-[191.53%] left-[0.01%] max-w-none object-cover top-[-15.74%] w-full" src={imgFrame5} />
         </div>
+        <img src="/assets/logo_Largo.svg" alt="" className="absolute top-4 left-4" />
+
         <div className="absolute bg-gradient-to-b content-stretch flex flex-col from-[13.118%] from-transparent gap-[10px] h-[263px] items-center justify-center left-0 overflow-clip p-[50px] to-secondary-full top-[294px] w-full">
-          <div className="flex flex-col font-source-sans font-bold justify-center leading-[0] relative shrink-0 text-[140.243px] md:text-[80px] text-center text-white whitespace-nowrap">
+
+          <div className="font-source-sans font-bold text-[36px] sm:text-[40px] md:text-[70px] lg:text-[90px] text-center text-white">
             <p className="leading-[1.2]">{`corsi di lingua e cultura `}</p>
           </div>
           <Button variant="solid" size="lg">Vedi altro</Button>
         </div>
-        <div className="absolute h-[259px] left-[66px] overflow-clip top-[73px] w-[242px] hidden md:block">
-          <p className="absolute font-vollkorn font-normal inset-[80.31%_5.79%_3.77%_6.2%] leading-[normal] text-[35.336px] text-secondary-100">
-            Italianementi
-          </p>
-          <div className="absolute inset-[6.18%_65.1%_22.58%_6.61%]">
-            <img alt="" className="absolute block max-w-none size-full" src="" />
-          </div>
-        </div>
+
       </div>
 
       <div className="bg-secondary-100 content-stretch flex flex-col gap-[var(--spacing-8)] items-center overflow-clip px-[10px] py-[60px] relative shrink-0 w-full">
         <div className="gap-x-[10px] gap-y-[10px] grid grid-cols-1 md:grid-cols-[292px_minmax(0,1fr)] container mx-auto overflow-clip relative shrink-0 w-full">
           <div className="content-stretch flex flex-col items-start justify-end overflow-clip relative shrink-0">
-            <div className="flex flex-col font-inter font-bold justify-center leading-[0] not-italic relative shrink-0 text-[22px] text-secondary-full text-center whitespace-nowrap">
+            <div className="flex flex-col font-source-sans font-bold justify-center leading-[0] not-italic relative shrink-0 text-[22px] text-secondary-full text-center whitespace-nowrap">
               <p className="leading-[33px]">Chi siamo</p>
             </div>
           </div>
           <div className="content-stretch flex flex-col gap-[10px] items-start overflow-clip relative shrink-0">
-            <p className="font-inter font-medium leading-[27px] w-full not-italic relative shrink-0 text-[18px] text-secondary-full">
+            <p className="font-source-sans font-medium leading-[27px] w-full not-italic relative shrink-0 text-[18px] text-secondary-full">
               ¡Hola a todos! Soy Annalisa, de Spigno Saturnia, un encantador pueblo en el bajo Lazio. Estudié antropología en Roma y actualmente curso un Master en Diversidad Cultural en Buenos Aires, donde vivo desde 2010. Me especializo en enseñar la lengua y cultura italiana, conectando nuestras diversidades y promoviendo un diálogo entre Argentina, Latinoamérica e Italia. ¡Hasta pronto!
             </p>
             <Button variant="underline" size="sm">Ver Mas</Button>
@@ -74,15 +70,15 @@ export default function Home() {
         </div>
         <div className="content-stretch flex flex-wrap md:flex-nowrap gap-[10px] items-center container mx-auto overflow-clip p-[10px] relative shrink-0 w-full">
           <div className="content-stretch flex flex-[1_0_0] flex-col items-center justify-center overflow-clip p-[10px] relative w-full">
-            <div className="h-[365px] relative shrink-0 w-full md:w-[455px] max-w-full">
-              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full rounded-m" src={imgBelkacemyabadeneManipulation44990101} />
+            <div className="relative shrink-0 w-full md:w-[450px] max-w-full">
+              <img alt="" src={imgBelkacemyabadeneManipulation44990101} />
             </div>
           </div>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start overflow-clip p-[10px] relative w-full">
-            <a className="block font-inter font-black leading-[0] not-italic relative shrink-0 text-[46px] text-white whitespace-nowrap" href="https://italianementi.wixsite.com/home">
-              <p className="cursor-pointer leading-[69px]">Caffè italiano</p>
+            <a className="block font-source-sans font-black leading-[0] not-italic relative shrink-0 text-[46px] text-white whitespace-nowrap">
+              <p className="cursor-pointer leading-[69px]">Caffè italiano</p>
             </a>
-            <p className="font-inter font-bold leading-[33px] w-full not-italic relative shrink-0 text-[22px] text-white">
+            <p className="font-source-sans font-bold leading-[33px] w-full not-italic relative shrink-0 text-[22px] text-white">
               uno spazio per conversare mentre conosciamo la realtá sociale, storica e culturale italiana
             </p>
             <Button variant="solid" size="lg" className="mt-4">Vedi altro</Button>
@@ -92,11 +88,11 @@ export default function Home() {
 
       <div className="bg-secondary-100 content-stretch flex flex-col gap-[var(--spacing-8)] items-center overflow-clip px-[10px] py-[60px] relative shrink-0 w-full">
         <div className="content-stretch flex flex-col items-center leading-[0] container mx-auto not-italic overflow-clip relative shrink-0 text-neutral-1000 text-center w-full whitespace-nowrap">
-          <div className="flex flex-col font-inter font-medium justify-center relative shrink-0 text-[18px]">
+          <div className="flex flex-col font-source-sans font-medium justify-center relative shrink-0 text-[18px]">
             <p className="leading-[27px]">Materiale di interesse</p>
           </div>
-          <div className="flex flex-col font-inter font-black justify-center relative shrink-0 text-[36px] md:text-[68px] mt-4 md:mt-0">
-            <p className="leading-tight md:leading-[102px]">Letture, conferenze e racconti</p>
+          <div className="flex flex-col  font-black justify-center text-[36px] md:text-[68px] mt-4 md:mt-0">
+            <p className="leading-tight md:leading-[102px] sm:text-[36px] text-wrap" >Letture, conferenze e racconti</p>
           </div>
         </div>
         <div className="gap-x-[40px] gap-y-[40px] grid grid-cols-1 md:grid-cols-4 container mx-auto overflow-clip relative shrink-0 w-full mt-8 px-[10px]">
@@ -126,16 +122,16 @@ export default function Home() {
         </div>
         <div className="content-stretch flex items-center container mx-auto overflow-clip p-[10px] relative shrink-0 w-full">
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-center justify-center not-italic overflow-clip p-[10px] relative text-white text-center">
-            <a className="block font-inter font-black leading-tight relative shrink-0 text-[36px] md:text-[46px]" href="https://italianementi.wixsite.com/home">
+            <a className="block font-source-sans font-black leading-tight relative shrink-0 text-[36px] md:text-[46px]">
               <p className="cursor-pointer">Voglio Laboratorio letterario di più</p>
             </a>
-            <p className="font-inter font-bold leading-[33px] w-full relative shrink-0 text-[22px] mt-2">
+            <p className="font-source-sans font-bold leading-[33px] w-full relative shrink-0 text-[22px] mt-2">
               Avvicinati alla cultura italiana e alla sua lingua attraverso la letteratura
             </p>
           </div>
         </div>
         <div className="content-stretch flex flex-wrap justify-center gap-[10px] items-center relative shrink-0 mt-4">
-          <Button variant="ghost" size="md" className="text-neutral-100 hover:bg-neutral-100/10 underline">Maggiori informazioni</Button>
+          <Button variant="ghost" size="md" className="text-neutral-100 hover:bg-neutral-100/10 underline text-white">Maggiori informazioni</Button>
           <Button variant="solid" size="lg">Visualizza tutti i laboratori</Button>
         </div>
       </div>
@@ -150,37 +146,37 @@ export default function Home() {
           </div>
           <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip p-[10px] relative w-full mt-10 md:mt-0">
             <div className="content-stretch flex flex-col items-start justify-center leading-tight container mx-auto not-italic overflow-clip relative shrink-0 text-neutral-1000">
-              <div className="flex flex-col font-inter font-medium justify-center relative shrink-0 text-[18px]">
+              <div className="flex flex-col font-source-sans font-medium justify-center relative shrink-0 text-[18px]">
                 <p className="leading-[27px]">Prossimo laboratorio</p>
               </div>
-              <div className="flex flex-col font-inter font-black justify-center relative shrink-0 text-[46px] mt-2">
+              <div className="flex flex-col font-source-sans font-black justify-center relative shrink-0 text-[46px] mt-2">
                 <p className="leading-[69px]">Tu, mio</p>
               </div>
             </div>
             <div className="content-stretch flex flex-col gap-[5px] items-start not-italic relative shrink-0 text-black">
-              <div className="flex flex-col font-inter font-bold justify-center leading-tight relative shrink-0 text-[26px]">
+              <div className="flex flex-col font-source-sans font-bold justify-center leading-tight relative shrink-0 text-[26px]">
                 <p className="leading-[39px]">Inizio e presentazione</p>
               </div>
-              <div className="flex flex-col font-inter font-medium justify-center leading-[27px] relative shrink-0 text-[18px]">
+              <div className="flex flex-col font-source-sans font-medium justify-center leading-[27px] relative shrink-0 text-[18px]">
                 <p className="mb-0">Sabato 14 settembre</p>
                 <p>ore 15 -18, caballito, caba</p>
               </div>
             </div>
             <div className="content-stretch flex flex-col gap-[5px] items-start not-italic relative shrink-0 text-black mt-2">
-              <div className="flex flex-col font-inter font-bold justify-center leading-tight relative shrink-0 text-[26px]">
+              <div className="flex flex-col font-source-sans font-bold justify-center leading-tight relative shrink-0 text-[26px]">
                 <p className="leading-[39px]">A seguire</p>
               </div>
-              <div className="flex flex-col font-inter font-medium justify-center leading-[27px] relative shrink-0 text-[18px]">
+              <div className="flex flex-col font-source-sans font-medium justify-center leading-[27px] relative shrink-0 text-[18px]">
                 <p className="mb-0">Tre incontri presenziali,</p>
                 <p className="mb-0">stesso giorno e ora</p>
                 <p>ogni tre settimane</p>
               </div>
             </div>
             <div className="content-stretch flex flex-col gap-[5px] items-start leading-tight not-italic relative shrink-0 text-black w-full mt-2">
-              <div className="flex flex-col font-inter font-bold justify-center relative shrink-0 text-[26px]">
+              <div className="flex flex-col font-source-sans font-bold justify-center relative shrink-0 text-[26px]">
                 <p className="leading-[39px]">Per finire</p>
               </div>
-              <div className="flex flex-col font-inter font-medium justify-center min-w-full relative shrink-0 text-[18px] w-full">
+              <div className="flex flex-col font-source-sans font-medium justify-center min-w-full relative shrink-0 text-[18px] w-full">
                 <p className="leading-[27px]">14 dicembre brindisi di fine anno di italianeMenti con proiezione del video che sintetizza l´esperienza del laboratorio realizzato dai partecipanti</p>
               </div>
             </div>
@@ -194,10 +190,10 @@ export default function Home() {
 
       <div className="bg-secondary-100 content-stretch flex flex-col gap-[var(--spacing-8)] items-center overflow-clip px-[10px] py-[60px] relative shrink-0 w-full mt-8">
         <div className="content-stretch flex flex-col items-center leading-tight container mx-auto not-italic overflow-clip relative shrink-0 text-neutral-1000 text-center w-full">
-          <div className="flex flex-col font-inter font-medium justify-center relative shrink-0 text-[18px]">
+          <div className="flex flex-col font-source-sans font-medium justify-center relative shrink-0 text-[18px]">
             <p className="leading-[27px]">Cosa ottengono gli iscritti grazie alla formazione</p>
           </div>
-          <div className="flex flex-col font-inter font-black justify-center relative shrink-0 text-[36px] md:text-[68px] mt-2">
+          <div className="flex flex-col font-source-sans font-black justify-center relative shrink-0 text-[36px] md:text-[68px] mt-2">
             <p className="leading-tight md:leading-[102px]">Testimonianze dei nostri studenti</p>
           </div>
         </div>
@@ -224,17 +220,17 @@ export default function Home() {
         </div>
         <div className="content-stretch flex items-center container mx-auto overflow-clip p-[10px] relative shrink-0 w-full">
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-center justify-center not-italic overflow-clip p-[10px] relative text-white text-center">
-            <a className="block font-inter font-black leading-tight relative shrink-0 text-[36px] md:text-[46px]" href="https://italianementi.wixsite.com/home">
+            <a className="block font-source-sans font-black leading-tight relative shrink-0 text-[36px] md:text-[46px]" href="https://italianementi.wixsite.com/home">
               <p className="cursor-pointer">Inizia oggi stesso</p>
             </a>
-            <p className="font-inter font-bold leading-[33px] w-full relative shrink-0 text-[22px] mt-2">
+            <p className="font-source-sans font-bold leading-[33px] w-full relative shrink-0 text-[22px] mt-2">
               Contattaci per scoprire tutte le offerte attualmente disponibili per iniziare
             </p>
           </div>
         </div>
         <div className="content-stretch flex flex-wrap gap-[10px] items-start justify-center relative shrink-0 mt-6 max-w-lg w-full">
           <div className="bg-secondary-100 border border-secondary-400 border-solid content-stretch flex items-center overflow-clip p-3 relative rounded-6 w-full md:w-auto flex-1">
-            <input type="email" placeholder="Email" className="bg-transparent border-none outline-none w-full font-inter font-medium text-[16px] text-black" />
+            <input type="email" placeholder="Email" className="bg-transparent border-none outline-none w-full font-source-sans font-medium text-[16px] text-black" />
           </div>
           <Button variant="solid" size="lg" className="w-full md:w-auto px-8">Invita</Button>
         </div>

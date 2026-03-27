@@ -11,18 +11,22 @@ export default function Navbar() {
 
     return (
         <div className="content-stretch flex items-center justify-between container mx-auto relative shrink-0 w-full px-[10px] z-50">
-            <div className="overflow-clip relative shrink-0 size-[85px]">
-                <div className="absolute inset-[51.7%_15.8%_24.31%_76.76%]">
-                    <img alt="" className="absolute block max-w-none size-full" src={imgVector} />
+            <Link href="/" tabIndex={-1}>
+                <div className="overflow-clip relative shrink-0 size-[85px]">
+                    <div className="absolute inset-[51.7%_15.8%_24.31%_76.76%]">
+                        <img alt="" className="absolute block max-w-none size-full" src={imgVector} />
+                    </div>
+                    <div className="absolute inset-[16.06%_15.79%_15.85%_16.09%]">
+                        <img alt="" className="absolute block max-w-none size-full" src={imgVector1} />
+                    </div>
                 </div>
-                <div className="absolute inset-[16.06%_15.79%_15.85%_16.09%]">
-                    <img alt="" className="absolute block max-w-none size-full" src={imgVector1} />
-                </div>
-            </div>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex content-stretch gap-[10px] items-center relative shrink-0">
-                <Button variant="ghost" size="sm">Corsi Di lingua</Button>
+                <Link href="/corsi" tabIndex={-1}>
+                    <Button variant="ghost" size="sm">Corsi Di lingua</Button>
+                </Link>
                 <Button variant="ghost" size="sm">Lavoratori</Button>
                 <Button variant="ghost" size="sm">Cafe Italiano</Button>
                 <Button variant="ghost" size="sm">Nosotros</Button>
@@ -59,7 +63,9 @@ export default function Navbar() {
             {isMenuOpen && (
                 <div className="absolute top-full right-[2px] mt-2 w-full bg-white border border-gray-100 rounded-xl shadow-xl py-3 flex flex-col gap-2 md:hidden">
                     <div className="flex flex-col px-4 gap-1">
-                        <Button variant="ghost" size="sm" className="justify-start w-full text-left font-medium" onClick={() => setIsMenuOpen(false)}>Corsi Di lingua</Button>
+                        <Link href="/corsi" tabIndex={-1} onClick={() => setIsMenuOpen(false)} className="w-full">
+                            <Button variant="ghost" size="sm" className="justify-start w-full text-left font-medium">Corsi Di lingua</Button>
+                        </Link>
                         <Button variant="ghost" size="sm" className="justify-start w-full text-left font-medium" onClick={() => setIsMenuOpen(false)}>Lavoratori</Button>
                         <Button variant="ghost" size="sm" className="justify-start w-full text-left font-medium" onClick={() => setIsMenuOpen(false)}>Cafe Italiano</Button>
                         <Button variant="ghost" size="sm" className="justify-start w-full text-left font-medium" onClick={() => setIsMenuOpen(false)}>Nosotros</Button>
